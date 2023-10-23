@@ -1,0 +1,23 @@
+*{
+	margin:0; padding:0;
+}
+header{
+	width: 300px;
+	height: 100vh;
+	background: #042940;
+}
+header a{
+	color: #fff;
+}
+header ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+header li{
+	width: 100px;
+	height: 100px;
+	background: #f3f3f3;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 100px;
+}
