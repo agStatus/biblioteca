@@ -1,23 +1,78 @@
 *{
 	margin:0; padding:0;
 }
+body{
+	display: flex;
+
+	font-family: Arial;
+
+}
 header{
 	width: 300px;
 	height: 100vh;
 	background: #042940;
+	border-right: 3px solid orange;
 }
 header a{
 	color: #fff;
+	text-decoration: none;
+	padding: 50px;
+	box-sizing: content-box;
+	display: block;
+}
+header .logo a{
+	color: #fff;
+	font-size: 35px;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 50px;
 }
 header ul{
 	display: flex;
 	flex-wrap: wrap;
+	padding-top: 80;
 }
 header li{
-	width: 100px;
-	height: 100px;
-	background: #f3f3f3;
+	max-width: 148px;
+	height: 148px;
+	background: #3679a3;
 	border-radius: 10px;
 	text-align: center;
-	line-height: 100px;
+	list-style: none;
+	border: 1px solid orange;
+}
+header li:hover{
+	background: #3679a395;
+}
+h2{
+	font-size: 26px;
+	color:#333;
+	margin: 20px;
+}
+form{
+	display: flex;
+	flex-direction: column;
+	padding: 50px;
+	width: 400px;
+}
+form input, select{
+	border: 0;
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	margin: 20px;
+	height: 40px;
+	padding: 5px;
+	border-radius: 5px ;
+}
+form input[type="submit"]{
+	cursor: pointer;
+}
+form input[type="submit"]:hover{
+	background: #3679a3;
+	color: fff;
+}
+form label{
+	font-size: 14px;
+	margin-left: 25px;
+	
 }
